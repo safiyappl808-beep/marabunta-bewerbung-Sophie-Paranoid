@@ -132,6 +132,34 @@
         font-weight: bold;
     }
 
+
+    /* Rangsystem */
+    .rank-system { margin-top: 50px; }
+    .rank-system h2 { font-size: 30px; margin-bottom: 10px; text-align: center; }
+    .rank-system-intro { color: #999; text-align: center; margin-bottom: 25px; }
+    .ranks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .rank {
+        display: flex; align-items: center; gap: 16px; background: #101010;
+        border: 1px solid #202020; border-radius: 12px; padding: 16px 18px;
+        transition: 0.25s ease;
+    }
+    .rank:hover { border-color: rgba(0, 174, 239, 0.5); transform: translateY(-2px); }
+    .rank-number {
+        min-width: 38px; height: 38px; display: flex; align-items: center;
+        justify-content: center; border-radius: 50%; background: rgba(0, 174, 239, 0.1);
+        border: 1px solid rgba(0, 174, 239, 0.4); color: #00aeef; font-weight: bold;
+    }
+    .rank-name { font-weight: bold; color: #eeeeee; }
+    .leadership { margin-top: 45px; }
+    .leadership h2 { font-size: 30px; margin-bottom: 20px; text-align: center; }
+    .leader-card {
+        background: linear-gradient(135deg, rgba(0, 174, 239, 0.08), rgba(255,255,255,0.02));
+        border: 1px solid #202020; border-radius: 14px; padding: 24px; text-align: center;
+    }
+    .leader-role { color: #00aeef; font-size: 13px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; }
+    .leader-name { font-size: 22px; font-weight: bold; }
+    @media (max-width: 600px) { .ranks { grid-template-columns: 1fr; } }
+
     /* Schluss */
     .closing {
         margin-top: 60px;
@@ -298,6 +326,32 @@
     </div>
 </section>
 
+
+
+    <section class="rank-system">
+        <h2>Rangsystem</h2>
+        <p class="rank-system-intro">Die interne Rangstruktur der Marabunta Grande</p>
+        <div class="ranks">
+            <div class="rank"><div class="rank-number">1</div><div class="rank-name">Snitch</div></div>
+            <div class="rank"><div class="rank-number">2</div><div class="rank-name">Runner</div></div>
+            <div class="rank"><div class="rank-number">3</div><div class="rank-name">Homie</div></div>
+            <div class="rank"><div class="rank-number">4</div><div class="rank-name">Turfer</div></div>
+            <div class="rank"><div class="rank-number">5</div><div class="rank-name">Recru</div></div>
+            <div class="rank"><div class="rank-number">6</div><div class="rank-name">Turf-Lead</div></div>
+            <div class="rank"><div class="rank-number">7</div><div class="rank-name">Recru-Lead</div></div>
+            <div class="rank"><div class="rank-number">8</div><div class="rank-name">Street-Manager</div></div>
+            <div class="rank"><div class="rank-number">9</div><div class="rank-name">Vize OG</div></div>
+            <div class="rank"><div class="rank-number">10</div><div class="rank-name">OG</div></div>
+        </div>
+    </section>
+
+    <section class="leadership">
+        <h2>Fraktionsleitung</h2>
+        <div class="leader-card">
+            <div class="leader-role">Vize</div>
+            <div class="leader-name">Isa Paranoid</div>
+        </div>
+    </section>
 
 <div class="closing">
 
